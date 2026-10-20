@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve a Table — Nham</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="wordmark">nham<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="menu.html" class="cart-pill" id="navCartPill">Cart · 0</a></li>
+      <li><a href="booking.html" class="btn btn-primary btn-small active">Reserve a table</a></li>
+    </ul>
+  </nav>
+
+  <section class="booking-wrap anim-up">
+    <div class="section-head">
+      <span class="eyebrow">Reservations</span>
+      <h2>Book a table</h2>
+      <p>Tell us when you're coming and how many. We'll confirm by email.</p>
+    </div>
+
+    <form id="bookingForm" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <p class="error">Enter your name.</p>
+      </div>
+
+      <div class="field-row">
+        <div class="field" id="f-phone">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="012 345 678">
+          <p class="error">Enter a valid phone number.</p>
+        </div>
+        <div class="field" id="f-email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <p class="error">Enter a valid email.</p>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field" id="f-date">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+          <p class="error">Choose a date from today onward.</p>
+        </div>
+        <div class="field" id="f-time">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time">
+          <p class="error">Choose a time.</p>
+        </div>
+      </div>
+
+      <div class="field" id="f-party">
+        <label for="party">Party size</label>
+        <select id="party" name="party">
+          <option value="">Select number of guests</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8+</option>
+        </select>
+        <p class="error">Select your party size.</p>
+      </div>
+
+      <div class="field">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes" placeholder="Allergies, occasion, seating preference..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Confirm reservation</button>
+
+      <div class="success-box" id="successBox">
+        <strong>Table booked.</strong> <span id="successDetail"></span>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>Nham · 24 Street 240, Phnom Penh · Open daily 11:00–22:00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

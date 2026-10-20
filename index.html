@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nham — Modern Khmer Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="wordmark">nham<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="menu.html" class="cart-pill" id="navCartPill">Cart · 0</a></li>
+      <li><a href="booking.html" class="btn btn-primary btn-small">Reserve a table</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="anim-up">
+      <h1>Rice, fire, and the Mekong on a plate.</h1>
+      <p>Nham serves Khmer home cooking rebuilt for the dinner table — smoked fish amok, charcoal-grilled meats,
+        wood-fired pizza, and rice-paper wraps made fresh through the night.</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-primary">Order food</a>
+        <a href="booking.html" class="btn btn-outline">Reserve a table</a>
+      </div>
+    </div>
+    <div class="hero-thumb anim-up anim-delay-1">
+      <img src="images/amok.jpg" alt="Fish Amok"
+        onerror="this.parentElement.style.background='linear-gradient(135deg,#D9A441,#C1502E)'; this.style.display='none'">
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head anim-up">
+      <span class="eyebrow">From the kitchen</span>
+      <h2>Tonight's favourites</h2>
+      <p>A short list of what regulars keep coming back for.</p>
+    </div>
+    <div class="grid">
+      <div class="dish-card">
+        <div class="dish-thumb"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtEld5SypQx78B21RwFXYkJh2oAUN_lhxA6RFVTZkGd57VzolpELvi6EmR&s=10"
+            alt="Fish Amok" onerror="this.style.display='none'"></div>
+        <div class="dish-body">
+          <h3>Fish Amok</h3>
+          <p class="price">$9.50</p>
+          <p>Steamed curry custard, snakehead fish, banana leaf.</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-thumb"><img src="https://bellyfull.net/wp-content/uploads/2026/02/Margherita-Pizza-hero.jpg"
+            alt="Margherita Pizza" onerror="this.style.display='none'"></div>
+        <div class="dish-body">
+          <h3>Margherita Pizza</h3>
+          <p class="price">$8.00</p>
+          <p>San Marzano tomato, mozzarella, fresh basil.</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-thumb"><img
+            src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/db5ef13f0825b81a5445ae9d30b97ed6/Derivates/dc31adf30cce05a9f858beccb77038d992175aa6.jpg"
+            alt="Mango Sticky Rice" onerror="this.style.display='none'"></div>
+        <div class="dish-body">
+          <h3>Mango Sticky Rice</h3>
+          <p class="price">$4.00</p>
+          <p>Coconut sticky rice, ripe mango, sesame.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="about-block">
+      <div class="hero-thumb" style="aspect-ratio:4/3;border-radius:8px">
+        <img src="image/grandmother-kitchen.jpg" alt="A grandmother cooking in her kitchen">
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#D9A441,#1F3A2E)'; this.style.display='none'">
+      </div>
+      <div>
+        <span class="eyebrow">Our kitchen</span>
+        <h2>Cooked the way grandmothers taught it</h2>
+        <p style="margin-top:1rem;color:#5c5344">Nham opened in 2019 with one goal: bring the flavours of a Phnom Penh
+          home kitchen to a restaurant table, without smoothing out the edges. Everything is made in-house daily, from
+          the prahok to the palm sugar caramel — even the bread is baked fresh each morning.</p>
+        <a href="booking.html" class="btn btn-dark" style="margin-top:1.5rem">Book a table</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Nham · 24 Street 240, Phnom Penh · Open daily 11:00–22:00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

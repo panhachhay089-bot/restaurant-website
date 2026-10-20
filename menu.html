@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Nham</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="wordmark">nham<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="#cartPanel" class="cart-pill" id="navCartPill">Cart · 0</a></li>
+      <li><a href="booking.html" class="btn btn-primary btn-small">Reserve a table</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding-bottom:0">
+    <div class="section-head anim-up">
+      <span class="eyebrow">Full menu</span>
+      <h2>Order for pickup or dine-in</h2>
+      <p>Pick a category, add what you like, and check out from the cart on the right.</p>
+    </div>
+  </section>
+
+  <div class="menu-layout anim-up">
+    <div>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-cat="starters">Starters</button>
+        <button class="tab" data-cat="mains">Mains</button>
+        <button class="tab" data-cat="pizza-pasta">Pizza &amp; Pasta</button>
+        <button class="tab" data-cat="desserts">Desserts</button>
+        <button class="tab" data-cat="drinks">Drinks</button>
+      </div>
+      <div id="menuList"></div>
+    </div>
+
+    <aside class="cart-panel" id="cartPanel">
+      <h3>Your order</h3>
+      <div id="cartLines">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-total" id="cartTotal" style="display:none">
+        <span>Total</span><span id="cartTotalValue">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkoutBtn" disabled>Place order</button>
+      <div class="confirm-msg" id="confirmMsg">Order placed! We'll have it ready in ~20 minutes.</div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Nham · 24 Street 240, Phnom Penh · Open daily 11:00–22:00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
